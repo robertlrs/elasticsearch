@@ -19,8 +19,9 @@
 # Xms represents the initial size of total heap space
 # Xmx represents the maximum size of total heap space
 
--Xms${heap.min}
--Xmx${heap.max}
+##-Xms${heap.min}
+##-Xmx${heap.max}
+
 
 ################################################################
 ## Expert settings
@@ -97,3 +98,6 @@ ${heap.dump.path}
 # due to internationalization enhancements in JDK 9 Elasticsearch need to set the provider to COMPAT otherwise
 # time/date parsing will break in an incompatible way for some date patterns and locals
 9-:-Djava.locale.providers=COMPAT
+
+-Xms2g
+-Xmx2g
